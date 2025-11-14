@@ -11,10 +11,10 @@ import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
 import utilities.Browserutil;
-
+// Example class to demonstrate handling different types of JavaScript alerts using Selenium
 public class AlertHandlingExample {
 
-	//example of Alert
+	 // Test for accepting a simple alert
 	@Test
 	public static void testHandlingAlert() throws InterruptedException {
 		RemoteWebDriver driver = Browserutil.getDriver("chrome");//Launch browser
@@ -32,7 +32,7 @@ public class AlertHandlingExample {
 		
 		driver.quit();
 	}
-	//example of Confirm
+	// Test for dismissing a confirm dialog
 	@Test
 	public static void testHandlingConfirm() throws InterruptedException {
 		RemoteWebDriver driver = Browserutil.getDriver("chrome");//Launch browser
@@ -46,7 +46,7 @@ public class AlertHandlingExample {
 		driver.quit();
 	}
 	
-	//example of Prompt
+	// Test for entering text in a prompt dialog and accepting it
 		@Test
 		public static void testHandlingPrompt() throws InterruptedException {
 			RemoteWebDriver driver = Browserutil.getDriver("chrome");//Launch browser
@@ -63,3 +63,4 @@ public class AlertHandlingExample {
 		
 	
 }
+

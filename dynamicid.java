@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import utilities.Browserutil;
-
+//Handling dynamic IDs
 public class dynamicid {
 	
 	@Test(enabled =false)
@@ -142,4 +142,5 @@ public class dynamicid {
 	
 }
 	
+
 

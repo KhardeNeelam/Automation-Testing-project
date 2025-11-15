@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
 import utilities.Browserutil;
-
+//Demonstrate handling multiple tabs/windows
 public class WindowHandlingExample {
 	
 	@Test(enabled = false)
@@ -65,3 +65,4 @@ public class WindowHandlingExample {
 	}
 	
 }
+

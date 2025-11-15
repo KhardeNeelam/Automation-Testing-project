@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 import utilities.Browserutil;
 
 public class TooltipExample {
-
+	// Test to print the tooltip attribute from an input element inside an iframe
+    // on the jQuery UI demo page
 	@Test(description = "Simple way to print Iframe attribute" , enabled =true)
 	public  void test1() {
 		
@@ -22,7 +23,7 @@ public class TooltipExample {
 		
 		
 	}
-	
+	// Disabled test method: Prints tooltip attribute from input in iframe on another jQuery UI page
 	@Test(enabled =false)
 	public  void test2() {
 		
@@ -36,6 +37,8 @@ public class TooltipExample {
 		System.out.println("Tooltip2--->"+Tooltip);
 			
 	}
+	 // Disabled test method: Alternative way to switch to an iframe using WebElement,
+    // then print tooltip, exit iframe, and click the "Draggable" link
 	@Test(enabled =false)
 	public  void test3() {
 		
@@ -58,7 +61,8 @@ public class TooltipExample {
 		driver.findElement(By.xpath("//a[text()='Draggable']")).click();
 				
 	}
-	
+	 // Test navigating across multiple nested iframes,
+    // switching between frames, handling modal dialogs, and demonstrating window switching
 	@Test
 	public  void test4() throws InterruptedException {
 		
@@ -90,9 +94,12 @@ public class TooltipExample {
 		driver.findElement(By.xpath("//span[@class='close']")).click();
 		//so here we leanred about modal dialog box
 		//its not like alert(), you can simply go on modal dialog and dismiss it.
+
+		// Notes: Modal dialog is not a browser alert - dismiss via click
 		System.out.println("End of the example multiple windows");
 		
 		driver.quit();
 	}
 	
 }
+
